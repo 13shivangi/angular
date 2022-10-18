@@ -1,0 +1,11 @@
+img{
+    border-radius: 22px;
+    margin: 5px 7px 6px 16px;
+}
+userdiv{
+    border: solid;
+    border-width: 2px;
+    border-radius: 17px;
+    background-color: beige;
+    margin: 5px 5px 5px 5px;
+}

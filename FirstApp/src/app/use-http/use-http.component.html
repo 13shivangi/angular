@@ -1,0 +1,33 @@
+<!-- <p>use-http works!</p> -->
+<button (click)="ShowDetails()">User Details </button>
+<button (click)="AccessWebApi()">Access web Api</button>
+<button (click)="IntegrationApi()">Integration lab </button>
+<hr/>
+<p>===========Accessing Web Api============</p>
+<h5>{{webApiData | json}}</h5>
+<hr/>
+<p>=======integration lab =========</p>
+<h5>{{integrationApiData | json}}</h5>
+<ul>
+    <li *ngFor = "let user of users">
+        <div style="background-color: rgb(205, 152, 254); color: rgb(0, 9, 9); font-style: bold;">{{user.id}}</div>
+        <br/>
+        <div style="font-style: italic;">{{user.name}}</div>
+        <hr/>
+        <div>{{user.username}}</div>
+        <hr/>
+        <div style="color:maroon ; font-size: 20px;">{{user.email}}</div>
+        <hr/>
+        <div>{{user.address.street}}</div>
+        <hr/>
+        <div>{{user.address.suite}}</div>
+        <hr/>
+        <div>{{user.address.city}}</div>
+        <hr/>
+        <div>{{user.address.zipcode}}</div>
+        <hr/>
+        <div>{{user.address.geo.lat}}</div>
+        <hr/>
+        <div>{{user.address.geo.lng}}</div><br/>
+    </li>
+</ul>

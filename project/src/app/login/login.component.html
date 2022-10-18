@@ -1,0 +1,33 @@
+<div style="margin: 50px 200px 50px 200px;
+border-style: solid;
+border-radius: 10px;
+border-width: thin;
+padding-bottom: 70px;
+padding-top: 70px;
+padding-left: 300px;
+padding-right: 130px;
+background-color: gold;
+box-shadow: 10px 10px 20px dimgrey">
+    <div>UserName</div>
+    <input  style = "padding-bottom: 10px;margin-top: 10px; " type = "text" [(ngModel)]="name" placeholder = "Enter your name"/>
+    <span style="color: red;margin-left: 7px;">{{name}}</span>
+    <br/>
+    <div style = "margin-top: 30px;">Password</div>
+    <input  style = "padding-bottom: 10px;margin-top: 10px; "
+    type = "password" [(ngModel)]="password" placeholder = "Enter Password"/>
+   <span style = "color: red;margin-left: 7px;">{{password}}</span>
+    <br/>
+    <button style = "margin : 50px 50px 0px 60px;
+    border-style: solid;
+    border-color: brown;
+    border-radius: 12px;
+    background-color: beige;
+    font-size: medium;
+    font-style: normal;
+    padding: 5px 5px 5px 5px;"(click)="login(statusDiv)">Login</button>
+    <div #statusDiv> 
+        <!-- # is used to convert html to TS -->
+        {{status}}
+    </div>
+    
+</div>

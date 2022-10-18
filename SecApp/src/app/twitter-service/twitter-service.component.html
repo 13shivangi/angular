@@ -1,0 +1,11 @@
+<!-- <p>twitter-service works!</p> -->
+
+<ul>
+    <li *ngFor = "let n of PlugTwitter()">
+        {{n}}
+        </li>
+</ul>
+
+<hr/>
+<h3>Directly accessing the injected service</h3>
+{{myObj.showTwitterNotification()}}

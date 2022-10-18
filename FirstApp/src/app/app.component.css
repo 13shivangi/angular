@@ -1,0 +1,14 @@
+.navbar{
+    background-color: blue;
+    padding: 10px;
+    box-shadow: 5px 5px 5px darkslategray;
+    border-radius: 5px;
+}
+a{
+    color: azure;
+    padding: 20px;
+}
+ 
+span{
+    color: silver;
+}
